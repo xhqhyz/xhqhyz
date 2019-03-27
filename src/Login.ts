@@ -37,7 +37,7 @@ class Login extends eui.Component{
         var request = <egret.HttpRequest>event.currentTarget;
         var data = JSON.parse(request.response);
         
-        if(data.token != ''){
+        if(data.codeId == 0 && data.token != ''){
             egret.log("登录成功");
         }
 
