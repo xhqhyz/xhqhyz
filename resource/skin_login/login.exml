@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="login" width="720" height="1279" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="loginIndex" width="720" height="1279" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" scaleY="1">
+		<e:Label id="version" text="V3.0.2" x="31" y="37" width="71" height="20" fontFamily="Microsoft YaHei" textColor="0x6a6a6a" size="24" textAlign="left"/>
+		<e:Image id="logo" width="228" height="225" y="137" fillMode="clip" source="" horizontalCenter="0"/>
+		<e:Rect id="userNameRect" width="529" height="75" y="428" ellipseWidth="4" ellipseHeight="4" fillAlpha="0.53" fillColor="0x000000" strokeWeight="1" strokeColor="0x8a795a" horizontalCenter="0" enabled="true"/>
+		<e:Image width="28" height="28" x="122" y="451" id="userNameLogo" fillMode="clip" scaleY="1"/>
+		<e:Rect id="userNameLine" width="1" height="24" x="167" y="453" enabled="true" fillColor="0x605a5a" strokeColor="0x605a5a"/>
+		<e:EditableText id="userName" width="440" height="72" prompt="用户名" y="429.5" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle" fontFamily="Microsoft YaHei" size="24" textColor="0x7f7f7f" promptColor="0x7F7F7F" horizontalCenter="45"/>
+		<e:Rect id="passwordRect" width="529" height="75" y="523" ellipseWidth="4" ellipseHeight="4" fillAlpha="0.53" fillColor="0x000000" strokeWeight="1" strokeColor="0x8A795A" horizontalCenter="0" enabled="true"/>
+		<e:Image id="passwordLogo" width="28" height="28" x="122" y="545" fillMode="clip" scaleY="1"/>
+		<e:Rect id="passwordLine" width="1" height="24" x="167" y="548" enabled="true" fillColor="0x605A5A" strokeColor="0x605A5A"/>
+		<e:EditableText id="password" width="440" height="72" prompt="密码" y="523" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle" fontFamily="Microsoft YaHei" size="24" promptColor="0x7F7F7F" textColor="0x7f7f7f" horizontalCenter="45" displayAsPassword="true"/>
+		<e:Button id="login" y="640" enabled="true" width="531" height="75" horizontalCenter="0" label="立即登入">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Rect id="loginRect" width="100%" height="100%" fillColor="0x0a6755" ellipseWidth="8" ellipseHeight="8" horizontalCenter="0"/>
+					<e:Label id="labelDisplay" text="立即登入" fontFamily="Microsoft YaHei" width="100%" height="100%" verticalAlign="middle" textAlign="center"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="freePlay" label="免费试玩" y="740" enabled="true" width="531" height="75" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" height="76">
+					<e:Rect id="playRect" width="100%" height="100%" ellipseWidth="8" ellipseHeight="8" fillColor="0xd7ba81" y="0" anchorOffsetY="0" horizontalCenter="0"/>
+					<e:Label id="playLabel" text="免费试玩" y="0" fontFamily="Microsoft YaHei" width="100%" height="100%" textColor="0x392c12" horizontalCenter="0" verticalAlign="middle" textAlign="center"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Rect id="footer" width="720" height="43" x="0" y="1236" enabled="false" fillAlpha="0.39"/>
+		<e:Label id="footerInfo" text="Copyright © 2019 新澳门. 保留一切权利." x="162" y="1246" size="20.8" textColor="0xffffff" fontFamily="Microsoft YaHei" textAlign="center" width="388" height="23"/>
+	</e:Group>
+</e:Skin>
