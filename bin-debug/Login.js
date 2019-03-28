@@ -39,7 +39,7 @@ var Login = (function (_super) {
     Login.prototype.onPostComplete = function (event) {
         var request = event.currentTarget;
         var data = JSON.parse(request.response);
-        if (data.token != '') {
+        if (data.codeId == 0 && data.token != '') {
             egret.log("登录成功");
         }
     };
@@ -49,9 +49,8 @@ var Login = (function (_super) {
     Login.prototype.onPostProgress = function (event) {
     };
     Login.prototype.play_click = function () {
-        egret.log("点击了试玩按钮");
+        egret.log("进入试玩");
     };
     return Login;
 }(eui.Component));
 __reflect(Login.prototype, "Login");
-//# sourceMappingURL=Login.js.map
